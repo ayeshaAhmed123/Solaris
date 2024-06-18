@@ -95,3 +95,8 @@
     transform: translateX(100%);
   }
 }
+@media (max-width: 809px) {
+  .slider {
+    width: 390px;
+  }
+}

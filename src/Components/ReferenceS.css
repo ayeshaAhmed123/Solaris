@@ -23,20 +23,29 @@
 .slider-head-div {
   flex: none;
   height: auto;
-  pointer-events: auto;
   position: relative;
-  user-select: none;
-  white-space: pre;
-  width: auto;
-  outline: none;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   flex-shrink: 0;
   transform: none;
+  /* flex: none;
+  height: auto;
+  pointer-events: auto;
+  position: relative;
+  user-select: none;
+  white-space: pre;
+  width: 100%;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  transform: none; */
 }
 .slider-heading {
-  pointer-events: auto;
+  /* pointer-events: auto;
   user-select: none;
   white-space: pre;
   margin: 0px;
@@ -52,7 +61,22 @@
   line-height: 52px;
   text-align: center;
   -webkit-text-stroke-width: initial;
+  -webkit-text-stroke-color: initial; */
+  margin: 0px;
+  padding: 0px;
+  font-weight: 600;
+  color: rgb(235, 235, 235);
+  font-size: 42px;
+  letter-spacing: -0.04em;
+  text-transform: none;
+  line-height: 52px;
+  text-align: center;
+  -webkit-text-stroke-width: initial;
   -webkit-text-stroke-color: initial;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  display: inline-block;
+  background-clip: text;
 }
 .heading-span {
   display: inline-block;
@@ -72,4 +96,15 @@
   overflow: hidden;
   position: relative;
   width: 189px;
+}
+@media (max-width: 809px) {
+  .slider-head {
+    padding: 0 40px 150px;
+  }
+  .slider-head-div {
+    white-space: pre-wrap;
+    width: 340px;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
 }
