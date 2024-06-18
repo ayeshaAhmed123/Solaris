@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Overview from "./Components/Overview";
 import BackgroundImage from "./Components/BackgroundImage";
 import Features from "./Components/Features";
+import References from "./Components/References";
 const App = () => {
   return (
     <div
@@ -35,6 +36,7 @@ const App = () => {
 
         <Overview />
         <Features />
+        <References />
         <BackgroundImage />
       </div>
     </div>
